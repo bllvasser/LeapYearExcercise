@@ -1,0 +1,27 @@
+
+    public static void main(String[] args) {
+
+        isLeapYear(1600);
+
+    }
+
+
+    public static boolean isLeapYear(int year){
+
+        if(year <= 1 || year >= 9999){
+            return false;
+        } if(year % 4  != 0) {
+            return false;
+        } if(year % 100 !=0) {
+            return true;
+        } if(year % 400 !=0) {
+            return false;
+        } else {
+            System.out.println("1600 is a leapyear");
+            return true;
+        }
+    }
+    "C:\Program Files\Java\jdk-15.0.1\bin\java.exe" "-javaagent:C:\Users\nadiy\OneDrive\Desktop\IntelliJ IDEA Community Edition 2020.2.3\lib\idea_rt.jar=50377:C:\Users\nadiy\OneDrive\Desktop\IntelliJ IDEA Community Edition 2020.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\nadiy\IdeaProjects\SpeedConverter\out\production\SpeedConverter Main
+1600 is a leapyear
+
+Process finished with exit code 0
